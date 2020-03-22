@@ -5,6 +5,8 @@ We want to understand more about the movies that families are watching. The foll
 
 Query 1:
 
+# This query makes use of aggregation as is required by one of the rubrics of this work. 
+# The aggreation used here is COUNT
 SELECT a.title title_of_movie, b.name category, COUNT(c.rental_id) total_rental
 FROM film a
 JOIN film_category f
